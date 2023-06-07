@@ -24,14 +24,14 @@ Boost.Python requires [@http://www.python.org/2.2 Python 2.2]
 
 There are two basic models for combining C++ and Python:
 
-* [@http://www.python.org/doc/current/ext/intro.html extending],
+* [@https://docs.python.org/extending/extending.html extending],
   in which the end-user launches the Python interpreter
   executable and imports Python “extension modules” written in C++.
   Think of taking a library written in C++ and giving it a Python
   interface so Python programmers can use it.  From Python, these
   modules look just like regular Python modules.
 
-* [@http://www.python.org/doc/current/ext/embedding.html embedding],
+* [@https://docs.python.org/3/extending/embedding.html embedding],
   in which the end-user launches a program written
   in C++ that in turn invokes the Python interpreter as a library
   subroutine.  Think of adding scriptability to an existing
@@ -40,7 +40,7 @@ There are two basic models for combining C++ and Python:
 The key distinction between extending and embedding is the location
 of the C++ `main()` function: in the Python interpreter executable,
 or in some other program, respectively.  Note that even when
-embedding Python in another program, [@http://www.python.org/doc/current/ext/extending-with-embedding.html extension modules are often
+embedding Python in another program, [@https://docs.python.org/3/extending/extending.html extension modules are often
 the best way to make C/C++ functionality accessible to Python
 code], so the use of extension modules is really at the heart of
 both models.
@@ -508,7 +508,7 @@ any of the following cases:
    `wrap_python.hpp`.  This restriction is actually imposed by
    Python, or more properly, by Python's interaction with your
    operating system.  See
-   [@http://docs.python.org/ext/simpleExample.html] for details.
+   [@https://docs.python.org/extending/extending.html#a-simple-example] for details.
 
 [endsect]
 [section Python Debugging Builds]
